@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Pilihan Bahan Gigi Tiruan - Zaky Dental</title>
+  <meta name="description"
+    content="Edukasi dan perbandingan pilihan bahan gigi tiruan (Valplast, Akrilik, Logam, Crown & Bridge) untuk kenyamanan dan estetika Anda.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Micro-Staggered Elements Inside Each Scroll Section for Pilihan Gigi */
+    .sec-observer .anim-title-left {
+      opacity: 0;
+      transform: translateX(-35px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.1s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-sub-right {
+      opacity: 0;
+      transform: translateX(35px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.25s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-card {
+      opacity: 0;
+      transform: scale(0.88) translateY(30px);
+      transition: opacity 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-card:nth-child(1) { transition-delay: 0.35s; }
+    .sec-observer .anim-card:nth-child(2) { transition-delay: 0.50s; }
+    .sec-observer .anim-card:nth-child(3) { transition-delay: 0.65s; }
+    .sec-observer .anim-card:nth-child(4) { transition-delay: 0.80s; }
+
+    .sec-observer.in-view .anim-title-left,
+    .sec-observer.in-view .anim-sub-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .sec-observer.in-view .anim-card {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  </style>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#D0E4FF",
+            "surface-bright": "#FFFFFF",
+            "inverse-primary": "#80C4FF",
+            "primary-container": "#0B1E3D",
+            "secondary": "#4B5563",
+            "on-secondary": "#FFFFFF",
+            "on-error-container": "#93000a",
+            "on-primary-fixed": "#0B1E3D",
+            "on-surface": "#0B1E3D",
+            "on-primary-container": "#99CCFF",
+            "error-container": "#ffdad6",
+            "primary": "#0B1E3D",
+            "primary-blue": "#0088FF",
+            "accent-orange": "#FF5722",
+            "surface-container-lowest": "#FFFFFF",
+            "on-secondary-container": "#4B5563",
+            "on-tertiary-fixed": "#271901",
+            "surface-container-highest": "#D8ECFF",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#475569",
+            "on-tertiary-fixed-variant": "#574425",
+            "on-tertiary": "#FFFFFF",
+            "outline": "#94A3B8",
+            "on-error": "#FFFFFF",
+            "surface-tint": "#0088FF",
+            "secondary-container": "#E2E8F0",
+            "on-secondary-fixed": "#191c1e",
+            "surface-container": "#F0F7FF",
+            "background": "#FFFFFF",
+            "on-primary": "#FFFFFF",
+            "tertiary-fixed-dim": "#dec29a",
+            "on-secondary-fixed-variant": "#444749",
+            "secondary-fixed": "#E2E8F0",
+            "primary-fixed": "#D0E4FF",
+            "secondary-fixed-dim": "#CBD5E1",
+            "inverse-surface": "#0B1E3D",
+            "primary-fixed-dim": "#80C4FF",
+            "on-background": "#0B1E3D",
+            "surface-variant": "#E6F2FF",
+            "tertiary": "#FF5722",
+            "on-tertiary-container": "#98805d",
+            "tertiary-fixed": "#fcdeb5",
+            "on-primary-fixed-variant": "#0066CC",
+            "surface-container-low": "#F4F9FF",
+            "surface": "#FFFFFF",
+            "tertiary-container": "#271901",
+            "outline-variant": "#CBD5E1",
+            "inverse-on-surface": "#F0F7FF",
+            "surface-container-high": "#E2F0FF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-padding-desktop": "120px",
+            "section-padding-mobile": "64px",
+            "gutter": "24px",
+            "container-max": "1280px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.6);
+      box-shadow: 0px 4px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .pulse-emerald {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-20">
+
+  <!-- TopNavBar (Floating Glassmorphic - Desktop Only) -->
+  <header
+    class="hidden md:block fixed top-3 md:top-4 left-0 right-0 z-50 px-gutter max-w-container-max mx-auto transition-all duration-300 pointer-events-none"
+    id="main-header">
+    <div
+      class="bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-lg shadow-slate-900/5 rounded-full px-5 md:px-8 py-2.5 md:py-3 flex justify-between items-center w-full pointer-events-auto">
+      <!-- Brand (Text Only) -->
+      <a href="index.html" class="flex items-center group">
+        <span
+          class="text-xl md:text-2xl font-bold text-[#0B1E3D] tracking-tight group-hover:text-[#0088FF] transition-colors"
+          style="font-family: 'Plus Jakarta Sans', sans-serif;">
+          Zaky Dental
+        </span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="hidden md:flex gap-1.5 items-center">
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="index.html">Beranda</a>
+        <a class="px-4 py-2 rounded-full text-sm font-bold text-[#FF5722] bg-[#FF5722]/10 transition-all duration-200"
+          href="pilihan-gigi.html">Pilihan Gigi</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="estimasi-biaya.html">Estimasi Biaya</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="galeri.html">Galeri Before-After</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Page Header -->
+    <section class="pt-7 pb-4 md:py-16 px-gutter text-center max-w-container-max mx-auto sec-observer">
+      <h1
+        class="font-headline-xl text-headline-xl md:font-headline-xl md:text-headline-xl mb-3 md:mb-4 text-on-surface font-bold anim-title-left">
+        Pilihan Bahan Gigi Tiruan</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto anim-sub-right">Panduan lengkap memilih material
+        gigi tiruan terbaik yang dirancang presisi untuk kenyamanan maksimal dan keindahan senyum alami Anda.</p>
+    </section>
+
+    <!-- Interactive Material Switcher -->
+    <section class="px-gutter max-w-container-max mx-auto pb-16 md:pb-24 sec-observer">
+      <!-- Floating Segmented Glass Pill Switcher (Mobile Responsive Horizontal Scroll) -->
+      <div class="flex justify-center mb-4 md:mb-14 anim-title-left">
+        <div
+          class="bg-slate-100/90 backdrop-blur-md p-1.5 rounded-full flex md:inline-flex items-center gap-1.5 border border-slate-200/90 shadow-md max-w-full overflow-x-auto scrollbar-none whitespace-nowrap px-2">
+          <button
+            class="tab-btn active flex-shrink-0 px-4 md:px-7 py-2 md:py-3 rounded-full text-xs md:text-sm font-bold text-white bg-[#FF5722] shadow-md shadow-[#FF5722]/30 transition-all duration-300"
+            data-target="valplast" onclick="switchTab(event, 'valplast')">
+            Valplast
+          </button>
+          <button
+            class="tab-btn flex-shrink-0 px-4 md:px-7 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium text-slate-600 hover:text-[#0B1E3D] hover:bg-white/80 transition-all duration-300"
+            data-target="akrilik" onclick="switchTab(event, 'akrilik')">
+            Akrilik
+          </button>
+          <button
+            class="tab-btn flex-shrink-0 px-4 md:px-7 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium text-slate-600 hover:text-[#0B1E3D] hover:bg-white/80 transition-all duration-300"
+            data-target="logam" onclick="switchTab(event, 'logam')">
+            Kerangka Logam
+          </button>
+          <button
+            class="tab-btn flex-shrink-0 px-4 md:px-7 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium text-slate-600 hover:text-[#0B1E3D] hover:bg-white/80 transition-all duration-300"
+            data-target="crown" onclick="switchTab(event, 'crown')">
+            Crown &amp; Bridge
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Content 1: Valplast -->
+      <div class="tab-content active" id="valplast">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-br from-white via-blue-50/70 to-slate-50 rounded-3xl p-6 md:p-10 border-2 border-blue-200/90 shadow-[0_12px_36px_rgba(0,136,255,0.12)] hover:shadow-[0_20px_45px_rgba(0,136,255,0.18)] transition-all duration-300 relative overflow-hidden">
+          <div>
+            <h2 class="font-headline-lg text-2xl md:text-3xl mb-6 text-[#0B1E3D] font-extrabold"
+              style="font-family: 'Plus Jakarta Sans', sans-serif;">Gigi Tiruan Valplast</h2>
+            <ul class="space-y-5 text-sm md:text-base text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Keunggulan:</strong> Sangat fleksibel, ringan,
+                  dan tidak
+                  menggunakan kawat logam penyangga sehingga tampak lebih natural.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">sentiment_very_satisfied</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Tingkat Kenyamanan:</strong> Sangat Tinggi.
+                  Material
+                  beradaptasi dengan baik pada gusi.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">medical_services</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Rekomendasi Kasus:</strong> Penggantian 1–4
+                  gigi hilang,
+                  pasien alergi logam, atau yang mengutamakan estetika tinggi.</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative h-64 md:h-full rounded-2xl overflow-hidden min-h-[300px] shadow-lg border border-slate-200/80 bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img src="img/valplast.png" alt="Valplast Fleksibel" class="w-full h-full object-cover rounded-2xl">
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Akrilik -->
+      <div class="tab-content" id="akrilik">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-br from-white via-orange-50/70 to-slate-50 rounded-3xl p-6 md:p-10 border-2 border-orange-200/90 shadow-[0_12px_36px_rgba(255,87,34,0.12)] hover:shadow-[0_20px_45px_rgba(255,87,34,0.18)] transition-all duration-300 relative overflow-hidden">
+          <div>
+            <h2 class="font-headline-lg text-2xl md:text-3xl mb-6 text-[#0B1E3D] font-extrabold"
+              style="font-family: 'Plus Jakarta Sans', sans-serif;">Gigi Tiruan Akrilik</h2>
+            <ul class="space-y-5 text-sm md:text-base text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Keunggulan:</strong> Harga terjangkau, kokoh,
+                  dan
+                  standar industri yang mudah disesuaikan serta ditambah elemen gigi di kemudian hari.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">sentiment_very_satisfied</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Tingkat Kenyamanan:</strong> Sedang (Kaku).
+                  Menggunakan
+                  cengkeram kawat kancing logam penyangga.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">medical_services</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Rekomendasi Kasus:</strong> Pilihan ekonomis
+                  untuk
+                  banyak gigi hilang atau rahang penuh.</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative h-64 md:h-full rounded-2xl overflow-hidden min-h-[300px] shadow-lg border border-slate-200/80 bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img src="img/akrilik.png" alt="Gigi Tiruan Akrilik" class="w-full h-full object-cover rounded-2xl">
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Logam -->
+      <div class="tab-content" id="logam">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-br from-white via-slate-100/80 to-slate-50 rounded-3xl p-6 md:p-10 border-2 border-slate-300/90 shadow-[0_12px_36px_rgba(11,30,61,0.14)] hover:shadow-[0_20px_45px_rgba(11,30,61,0.2)] transition-all duration-300 relative overflow-hidden">
+          <div>
+            <h2 class="font-headline-lg text-2xl md:text-3xl mb-6 text-[#0B1E3D] font-extrabold"
+              style="font-family: 'Plus Jakarta Sans', sans-serif;">Kerangka Logam (Cobalt Chrome)
+            </h2>
+            <ul class="space-y-5 text-sm md:text-base text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Keunggulan:</strong> Plat logam tipis
+                  menyandarkan beban
+                  gigitan pada gigi tetangga, tidak menekan gusi secara berlebihan.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">sentiment_very_satisfied</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Tingkat Kenyamanan:</strong> Tinggi. Plat tipis
+                  tidak
+                  menutupi seluruh langit-langit mulut.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">medical_services</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Rekomendasi Kasus:</strong> Pasien yang
+                  mengutamakan
+                  ketahanan kunyah maksimal untuk makanan keras.</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative h-64 md:h-full rounded-2xl overflow-hidden min-h-[300px] shadow-lg border border-slate-200/80 bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img src="img/kerangka_logam.png" alt="Kerangka Logam" class="w-full h-full object-cover rounded-2xl">
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: Crown & Bridge -->
+      <div class="tab-content" id="crown">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gradient-to-br from-white via-emerald-50/70 to-slate-50 rounded-3xl p-6 md:p-10 border-2 border-emerald-200/90 shadow-[0_12px_36px_rgba(16,185,129,0.12)] hover:shadow-[0_20px_45px_rgba(16,185,129,0.18)] transition-all duration-300 relative overflow-hidden">
+          <div>
+            <h2 class="font-headline-lg text-2xl md:text-3xl mb-6 text-[#0B1E3D] font-extrabold"
+              style="font-family: 'Plus Jakarta Sans', sans-serif;">Crown &amp; Bridge (Zirconia /
+              Porcelain)</h2>
+            <ul class="space-y-5 text-sm md:text-base text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Keunggulan:</strong> Mahkota gigi tiruan
+                  permanen yang
+                  disemenkan secara kuat, tidak perlu dilepas-pasang.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">sentiment_very_satisfied</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Tingkat Kenyamanan:</strong> Maksimal (Setara
+                  Gigi
+                  Asli). Sensasi rasa dan gigitan alami.</div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1">medical_services</span>
+                <div><strong class="text-[#0B1E3D] block mb-1 font-bold">Rekomendasi Kasus:</strong> Restorasi 1–3 gigi
+                  berurutan
+                  atau perbaikan mahkota gigi depan yang patah.</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="relative h-64 md:h-full rounded-2xl overflow-hidden min-h-[300px] shadow-lg border border-slate-200/80 bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img src="img/crown_bridge.png" alt="Crown & Bridge" class="w-full h-full object-cover rounded-2xl">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Tabel Komparasi -->
+    <section class="bg-surface-container-low py-16 md:py-24">
+      <div class="px-gutter max-w-container-max mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface font-bold">Matriks Perbandingan Bahan</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Pilih material yang paling
+            sesuai dengan prioritas dan gaya hidup Anda.</p>
+        </div>
+        <!-- Mobile Layout: Mobile Native Cards (< md) -->
+        <div class="block md:hidden space-y-4">
+          <!-- Card Valplast -->
+          <div class="bg-surface rounded-xl p-5 border border-outline-variant shadow-sm">
+            <div class="font-bold text-primary text-base pb-3 border-b border-outline-variant mb-3">
+              Valplast (Fleksibel)
+            </div>
+            <div class="space-y-2 text-sm text-on-surface-variant">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Fleksibilitas:</span>
+                <span class="font-bold text-on-surface">Sangat Tinggi</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Estetika:</span>
+                <span class="font-bold text-on-surface">Sangat Baik (Tanpa Kawat)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Daya Tahan Kunyah:</span>
+                <span class="font-bold text-on-surface">Sedang</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Akrilik -->
+          <div class="bg-surface rounded-xl p-5 border border-outline-variant shadow-sm">
+            <div class="font-bold text-primary text-base pb-3 border-b border-outline-variant mb-3">
+              Akrilik (Standard)
+            </div>
+            <div class="space-y-2 text-sm text-on-surface-variant">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Fleksibilitas:</span>
+                <span class="font-bold text-on-surface">Rendah (Kaku)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Estetika:</span>
+                <span class="font-bold text-on-surface">Cukup (Kawat Terlihat)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Daya Tahan Kunyah:</span>
+                <span class="font-bold text-on-surface">Baik</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Logam -->
+          <div class="bg-surface rounded-xl p-5 border border-outline-variant shadow-sm">
+            <div class="font-bold text-primary text-base pb-3 border-b border-outline-variant mb-3">
+              Kerangka Logam
+            </div>
+            <div class="space-y-2 text-sm text-on-surface-variant">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Fleksibilitas:</span>
+                <span class="font-bold text-on-surface">Rendah (Sangat Kaku)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Estetika:</span>
+                <span class="font-bold text-on-surface">Cukup (Kawat Terlihat)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Daya Tahan Kunyah:</span>
+                <span class="font-bold text-on-surface">Sangat Tinggi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Crown -->
+          <div class="bg-surface rounded-xl p-5 border border-outline-variant shadow-sm">
+            <div class="font-bold text-primary text-base pb-3 border-b border-outline-variant mb-3">
+              Crown &amp; Bridge (Permanen)
+            </div>
+            <div class="space-y-2 text-sm text-on-surface-variant">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Fleksibilitas:</span>
+                <span class="font-bold text-on-surface">Tidak Relevan (Permanen)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Estetika:</span>
+                <span class="font-bold text-on-surface">Sangat Baik (Mirip Asli)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-500 font-medium">Daya Tahan Kunyah:</span>
+                <span class="font-bold text-on-surface">Sangat Tinggi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Layout: Table Matrix (>= md) -->
+        <div class="hidden md:block overflow-x-auto rounded-xl shadow-sm border border-outline-variant bg-surface">
+          <table class="w-full text-left font-body-md text-body-md">
+            <thead class="bg-surface-variant text-on-surface font-label-md text-label-md">
+              <tr>
+                <th class="p-4 md:p-6 border-b border-outline-variant w-1/4 font-bold">Material</th>
+                <th class="p-4 md:p-6 border-b border-outline-variant text-center w-1/4 font-bold">Fleksibilitas</th>
+                <th class="p-4 md:p-6 border-b border-outline-variant text-center w-1/4 font-bold">Estetika</th>
+                <th class="p-4 md:p-6 border-b border-outline-variant text-center w-1/4 font-bold">Daya Tahan Kunyah
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-on-surface-variant">
+              <tr class="hover:bg-surface-container transition-colors">
+                <td class="p-4 md:p-6 border-b border-outline-variant font-bold text-primary">Valplast</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Sangat Tinggi</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Sangat Baik (Tanpa Kawat)</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Sedang</td>
+              </tr>
+              <tr class="hover:bg-surface-container transition-colors">
+                <td class="p-4 md:p-6 border-b border-outline-variant font-bold text-primary">Akrilik</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Rendah (Kaku)</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Cukup (Kawat Terlihat)</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Baik</td>
+              </tr>
+              <tr class="hover:bg-surface-container transition-colors">
+                <td class="p-4 md:p-6 border-b border-outline-variant font-bold text-primary">Logam</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Rendah (Sangat Kaku)</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Cukup (Kawat Terlihat)</td>
+                <td class="p-4 md:p-6 border-b border-outline-variant text-center">Sangat Tinggi</td>
+              </tr>
+              <tr class="hover:bg-surface-container transition-colors">
+                <td class="p-4 md:p-6 font-bold text-primary">Crown/Bridge</td>
+                <td class="p-4 md:p-6 text-center">Tidak Relevan (Permanen)</td>
+                <td class="p-4 md:p-6 text-center">Sangat Baik (Mirip Asli)</td>
+                <td class="p-4 md:p-6 text-center">Sangat Tinggi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (With Integrated Location, Schedule & Navigation) -->
+  <footer class="bg-[#0B1E3D] text-white py-4 pb-16 md:py-4 px-gutter border-t border-slate-800">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-start">
+
+      <!-- Col 1: Brand Info & Social Media (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col space-y-2.5 pt-8 md:pt-10">
+        <div class="flex items-center h-9">
+          <span class="text-2xl font-bold text-white tracking-wide leading-none"
+            style="font-family: 'Inter', sans-serif;">Zaky
+            Dental</span>
+        </div>
+        <p class="text-slate-300 text-sm md:text-[15px] leading-relaxed" style="font-family: 'Inter', sans-serif;">
+          Spesialis Pembuatan & Pemasangan Gigi Tiruan (Akrilik, Valplast, Kerangka Logam, Crown & Bridge) dengan
+          Garansi Penyesuaian Bebas.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-3 pt-0.5">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#E4405F] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-black text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-tiktok text-sm"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#FF0000] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-youtube text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col pt-8 md:pt-10">
+        <div class="h-9 flex items-center mb-2.5 border-b border-slate-700/60 pb-1.5">
+          <h3 class="font-bold text-white text-base uppercase tracking-wider" style="font-family: 'Inter', sans-serif;">
+            Navigasi Utama</h3>
+        </div>
+        <ul class="space-y-2 text-sm md:text-[15px] text-slate-200" style="font-family: 'Inter', sans-serif;">
+          <li><a href="index.html" class="hover:text-[#00C6FF] transition-colors font-medium">Beranda</a></li>
+          <li><a href="pilihan-gigi.html" class="hover:text-[#00C6FF] transition-colors font-medium">Pilihan Gigi
+              Tiruan</a></li>
+          <li><a href="estimasi-biaya.html" class="hover:text-[#00C6FF] transition-colors font-medium">Estimasi
+              Biaya</a></li>
+          <li><a href="galeri.html" class="hover:text-[#00C6FF] transition-colors font-medium">Galeri Before-After</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 & 4: Google Maps Embed (lg:col-span-2) -->
+      <div class="lg:col-span-2 flex flex-col justify-start">
+        <div
+          class="h-[250px] min-h-[250px] w-full rounded-xl overflow-hidden border border-slate-700/80 shadow-md relative bg-slate-800 pointer-events-auto">
+          <iframe title="Google Maps Zaky Dental"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15852.793264936496!2d106.845012!3d-6.647101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e7b23df7a7%3A0x401e8f1fc28c660!2sCiawi%2C%20Bogor%20Regency%2C%20West%20Java!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="100%" height="100%" style="border:0; pointer-events: auto;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="fixed bottom-28 md:bottom-8 right-6 z-50 bg-[#10B981] hover:bg-[#059669] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-colors pulse-emerald group"
+    href="https://wa.me/6281939198806?text=Halo%20Zaky%20Dental,%20saya%20ingin%20konsultasi%20mengenai%20pilihan%20bahan%20gigi."
+    target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <span class="material-symbols-outlined text-3xl">chat</span>
+  </a>
+
+  <!-- Floating BottomNavBar Glass Pill (Mobile App Navigation) -->
+  <nav
+    class="fixed bottom-3 left-4 right-4 z-50 md:hidden bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_30px_rgba(11,30,61,0.15)] rounded-full px-2 py-1.5 flex justify-around items-center">
+    <a href="index.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">home</span>
+      <span class="text-xs font-medium">Beranda</span>
+    </a>
+    <a href="pilihan-gigi.html"
+      class="flex items-center gap-1 px-3.5 py-1.5 rounded-full transition-all text-white bg-[#FF5722] font-bold shadow-md shadow-[#FF5722]/30">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+      <span class="text-xs">Gigi</span>
+    </a>
+    <a href="estimasi-biaya.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">calculate</span>
+      <span class="text-xs font-medium">Biaya</span>
+    </a>
+    <a href="galeri.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">photo_library</span>
+      <span class="text-xs font-medium">Galeri</span>
+    </a>
+  </nav>
+
+  <script>
+    function switchTab(event, tabId) {
+      // Update tab buttons styling
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.className = 'tab-btn px-5 md:px-7 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-medium text-slate-600 hover:text-[#0B1E3D] hover:bg-white/80 transition-all duration-300';
+      });
+      event.currentTarget.className = 'tab-btn active px-5 md:px-7 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold text-white bg-[#FF5722] shadow-md shadow-[#FF5722]/30 transition-all duration-300';
+
+      // Update content visibility
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      const targetElement = document.getElementById(tabId);
+      if (targetElement) {
+        targetElement.classList.add('active');
+      }
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollGroups = document.querySelectorAll('.sec-observer');
+      const observerOptions = { root: null, rootMargin: '0px 0px -50px 0px', threshold: 0.08 };
+      const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      scrollGroups.forEach(group => sectionObserver.observe(group));
+    });
+  </script>
+</body>
+
+</html>

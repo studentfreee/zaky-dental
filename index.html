@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Zaky Dental - Spesialis Gigi Tiruan Presisi & Nyaman</title>
+  <meta name="description"
+    content="Klinik gigi tiruan tersertifikasi spesialis pembuatan gigi tiruan presisi, valplast, akrilik, crown & bridge.">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#D0E4FF",
+            "surface-bright": "#FFFFFF",
+            "inverse-primary": "#80C4FF",
+            "primary-container": "#0B1E3D",
+            "secondary": "#4B5563",
+            "on-secondary": "#FFFFFF",
+            "on-error-container": "#93000a",
+            "on-primary-fixed": "#0B1E3D",
+            "on-surface": "#0B1E3D",
+            "on-primary-container": "#99CCFF",
+            "error-container": "#ffdad6",
+            "primary": "#0B1E3D",
+            "primary-blue": "#0088FF",
+            "accent-orange": "#FF5722",
+            "surface-container-lowest": "#FFFFFF",
+            "on-secondary-container": "#4B5563",
+            "on-tertiary-fixed": "#271901",
+            "surface-container-highest": "#D8ECFF",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#475569",
+            "on-tertiary-fixed-variant": "#574425",
+            "on-tertiary": "#FFFFFF",
+            "outline": "#94A3B8",
+            "on-error": "#FFFFFF",
+            "surface-tint": "#0088FF",
+            "secondary-container": "#E2E8F0",
+            "on-secondary-fixed": "#191c1e",
+            "surface-container": "#F0F7FF",
+            "background": "#FFFFFF",
+            "on-primary": "#FFFFFF",
+            "tertiary-fixed-dim": "#dec29a",
+            "on-secondary-fixed-variant": "#444749",
+            "secondary-fixed": "#E2E8F0",
+            "primary-fixed": "#D0E4FF",
+            "secondary-fixed-dim": "#CBD5E1",
+            "inverse-surface": "#0B1E3D",
+            "primary-fixed-dim": "#80C4FF",
+            "on-background": "#0B1E3D",
+            "surface-variant": "#E6F2FF",
+            "tertiary": "#FF5722",
+            "on-tertiary-container": "#98805d",
+            "tertiary-fixed": "#fcdeb5",
+            "on-primary-fixed-variant": "#0066CC",
+            "surface-container-low": "#F4F9FF",
+            "surface": "#FFFFFF",
+            "tertiary-container": "#271901",
+            "outline-variant": "#CBD5E1",
+            "inverse-on-surface": "#F0F7FF",
+            "surface-container-high": "#E2F0FF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-padding-desktop": "120px",
+            "section-padding-mobile": "64px",
+            "gutter": "24px",
+            "container-max": "1280px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .pulse-emerald {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+
+    .service-card {
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0px 20px 40px -6px rgba(0, 136, 255, 0.2), 0px 8px 20px rgba(11, 30, 61, 0.08);
+      border-color: rgba(0, 136, 255, 0.4) !important;
+    }
+
+    .service-card .service-icon {
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.12) rotate(-5deg);
+      background-color: #0088FF !important;
+      box-shadow: 0px 8px 20px rgba(0, 136, 255, 0.35);
+    }
+
+    .service-card:hover .service-icon span {
+      color: #ffffff !important;
+    }
+
+    /* Micro-Staggered Elements Inside Each Scroll Section */
+    .sec-observer .anim-title-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.1s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-sub-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.25s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-card {
+      opacity: 0;
+      transform: scale(0.85) translateY(35px);
+      transition: opacity 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      will-change: opacity, transform;
+    }
+
+    /* Stagger Delays for Cards Appearing One by One Out From Inside */
+    .sec-observer .anim-card:nth-child(1) { transition-delay: 0.35s; }
+    .sec-observer .anim-card:nth-child(2) { transition-delay: 0.50s; }
+    .sec-observer .anim-card:nth-child(3) { transition-delay: 0.65s; }
+    .sec-observer .anim-card:nth-child(4) { transition-delay: 0.80s; }
+    .sec-observer .anim-card:nth-child(5) { transition-delay: 0.95s; }
+
+    /* Active In-View Triggered via Intersection Observer */
+    .sec-observer.in-view .anim-title-left {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .sec-observer.in-view .anim-sub-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .sec-observer.in-view .anim-card {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-surface-dim">
+
+  <!-- TopNavBar (Floating Glassmorphic - Desktop Only) -->
+  <header
+    class="hidden md:block fixed top-3 md:top-4 left-0 right-0 z-50 px-gutter max-w-container-max mx-auto transition-all duration-300 pointer-events-none"
+    id="main-header">
+    <div
+      class="bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-lg shadow-slate-900/5 rounded-full px-5 md:px-8 py-2.5 md:py-3 flex justify-between items-center w-full pointer-events-auto">
+
+      <!-- Brand (Text Only) -->
+      <a href="index.html" class="flex items-center group">
+        <span
+          class="text-xl md:text-2xl font-bold text-[#0B1E3D] tracking-tight group-hover:text-[#0088FF] transition-colors"
+          style="font-family: 'Plus Jakarta Sans', sans-serif;">
+          Zaky Dental
+        </span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="hidden md:flex gap-1.5 items-center">
+        <a class="px-4 py-2 rounded-full text-sm font-bold text-[#FF5722] bg-[#FF5722]/10 transition-all duration-200"
+          href="index.html">Beranda</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="pilihan-gigi.html">Pilihan Gigi</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="estimasi-biaya.html">Estimasi Biaya</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="galeri.html">Galeri Before-After</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section (Full-Width Background Color) -->
+  <section
+    class="w-full pt-12 md:pt-28 pb-0 px-0 relative overflow-visible bg-gradient-to-br from-[#C0EDFF] via-[#E4F4FF] to-white border-b border-slate-200/80 z-10">
+    <!-- Inner Container for Content -->
+    <div class="max-w-[1440px] mx-auto w-full px-gutter md:px-12 lg:px-16 py-5 md:py-9 flex flex-col justify-between">
+
+      <!-- Headline Overlay (Only headline text shifted down via relative positioning) -->
+      <div class="relative z-10 w-full text-center mt-0 mb-0">
+        <h1
+          class="text-[clamp(2.8rem,9.2vw,9.5rem)] font-normal leading-[0.9] uppercase select-none text-center whitespace-nowrap w-full relative top-[14px] md:top-[18px]"
+          style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.07em;">
+          <span class="text-[#6BBFFF]">SETIAP SENYUM </span><span class="text-[#0077FF]">BERARTI</span>
+        </h1>
+      </div>
+
+      <!-- 3-Area Content Grid (Shifted down ~15px for centered vertical composition) -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6 lg:gap-8 items-center relative z-10 pt-2 md:pt-4">
+
+        <!-- Left Column: Description Card + Opening Hours + Orange CTA -->
+        <div class="md:col-span-4 flex flex-col gap-4 md:gap-5 order-2 md:order-1 md:-ml-4 lg:-ml-6">
+          <!-- White Bubble Description Card -->
+          <div
+            class="bg-white/95 backdrop-blur-md p-5 md:p-6 rounded-3xl shadow-sm border border-slate-100/90 max-w-md">
+            <p class="font-body-md text-sm md:text-base text-[#0B1E3D] leading-relaxed font-medium">
+              Spesialis gigi tiruan berpengalaman dengan teknologi cetak presisi tinggi untuk kenyamanan dan estetika
+              alami senyum Anda.
+            </p>
+          </div>
+
+          <!-- Jam Buka -->
+          <div class="flex flex-col gap-0.5 pl-2">
+            <span class="font-label-sm text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Jam
+              Buka</span>
+            <p class="font-label-md text-[#0B1E3D] font-bold text-xs md:text-sm">10:00 AM – 08:00 PM</p>
+          </div>
+
+          <!-- Vibrant Orange CTA Button -->
+          <a href="https://wa.me/6281939198806?text=Halo%20Zaky%20Dental,%20saya%20ingin%20konsultasi%20pembuatan%20gigi%20tiruan."
+            target="_blank" rel="noopener"
+            class="inline-flex items-center justify-center gap-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-label-md text-sm md:text-base px-8 py-3.5 md:py-4 rounded-full transition-all duration-300 shadow-[0_10px_25px_rgba(255,87,34,0.35)] hover:-translate-y-0.5 w-full sm:w-auto font-bold">
+            Jadwalkan Konsultasi
+            <span class="material-symbols-outlined text-lg">north_east</span>
+          </a>
+        </div>
+
+        <!-- Center Column: Focal Point Tooth Visual (Slightly Larger Scale) -->
+        <div class="md:col-span-4 flex items-center justify-center order-1 md:order-2 relative z-20">
+          <img src="img/hero_gigi.png" alt="Zaky Dental Hero Tooth Visual"
+            style="transform: scale(1.2) rotate(5deg) translateY(35px);"
+            class="w-[350px] md:w-[520px] lg:w-[610px] max-w-none md:-my-14 lg:-my-18 h-auto object-contain drop-shadow-[0_25px_45px_rgba(0,136,255,0.28)] hover:scale-[1.27] transition-transform duration-500 relative z-20 pointer-events-auto">
+        </div>
+
+        <!-- Right Column: Vertical Stats Stack (Matching Denta Care Reference) -->
+        <div
+          class="md:col-span-4 flex flex-row md:flex-col gap-6 md:gap-8 lg:gap-10 justify-around md:justify-center md:items-start order-3 md:pl-20 lg:pl-28">
+          <div class="text-left">
+            <span
+              class="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
+              style="font-family: 'Inter', sans-serif;">500+</span>
+            <p class="text-[#0B1E3D] font-bold mt-1.5 text-[12px] md:text-[14px] lg:text-[15px] leading-snug"
+              style="font-family: 'Inter', sans-serif;">Pasien Terlayani</p>
+          </div>
+          <div class="text-left">
+            <span
+              class="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
+              style="font-family: 'Inter', sans-serif;">5.0</span>
+            <p class="text-[#0B1E3D] font-bold mt-1.5 text-[12px] md:text-[14px] lg:text-[15px] leading-snug"
+              style="font-family: 'Inter', sans-serif;">Rating Google Maps</p>
+          </div>
+          <div class="text-left">
+            <span
+              class="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
+              style="font-family: 'Inter', sans-serif;">2–5</span>
+            <p class="text-[#0B1E3D] font-bold mt-1.5 text-[12px] md:text-[14px] lg:text-[15px] leading-snug"
+              style="font-family: 'Inter', sans-serif;">Hari Pengerjaan</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Value Proposition Section (Strict Scroll Trigger) -->
+  <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface-container-low relative sec-observer">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-4 anim-title-left">
+          Mengapa Memilih Zaky Dental?</h2>
+        <p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto anim-sub-right">
+          Standar pelayanan premium untuk memastikan kepuasan dan kenyamanan senyum Anda.</p>
+      </div>
+      <div
+        class="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-none gap-4 md:gap-8 pb-4 md:pb-0 -mx-gutter md:mx-0 px-gutter md:px-0 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="min-w-[240px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 flex flex-col items-center text-center p-5 md:p-6 bg-surface rounded-2xl shadow-sm border border-outline-variant service-card group cursor-pointer anim-card">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-surface-variant rounded-full flex items-center justify-center mb-5 md:mb-6 service-icon">
+            <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">medical_services</span>
+          </div>
+          <h3
+            class="font-headline-md text-[18px] md:text-[20px] font-semibold text-on-surface mb-2.5 md:mb-3 group-hover:text-[#0088FF] transition-colors">
+            Bahan Medis Tersertifikasi</h3>
+          <p class="font-body-md text-xs md:text-base text-on-surface-variant">Material aman, hypoallergenic, dan
+            berstandar medis
+            internasional.</p>
+        </div>
+        <div
+          class="min-w-[240px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 flex flex-col items-center text-center p-5 md:p-6 bg-surface rounded-2xl shadow-sm border border-outline-variant service-card group cursor-pointer anim-card">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-surface-variant rounded-full flex items-center justify-center mb-5 md:mb-6 service-icon">
+            <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">build</span>
+          </div>
+          <h3
+            class="font-headline-md text-[18px] md:text-[20px] font-semibold text-on-surface mb-2.5 md:mb-3 group-hover:text-[#0088FF] transition-colors">
+            Gratis Fitting Adjustment</h3>
+          <p class="font-body-md text-xs md:text-base text-on-surface-variant">Penyesuaian pasca pemasangan tanpa biaya
+            tambahan untuk
+            kenyamanan maksimal.</p>
+        </div>
+        <div
+          class="min-w-[240px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 flex flex-col items-center text-center p-5 md:p-6 bg-surface rounded-2xl shadow-sm border border-outline-variant service-card group cursor-pointer anim-card">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-surface-variant rounded-full flex items-center justify-center mb-5 md:mb-6 service-icon">
+            <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">architecture</span>
+          </div>
+          <h3
+            class="font-headline-md text-[18px] md:text-[20px] font-semibold text-on-surface mb-2.5 md:mb-3 group-hover:text-[#0088FF] transition-colors">
+            Pengerjaan Presisi</h3>
+          <p class="font-body-md text-xs md:text-base text-on-surface-variant">Detail cetakan sangat akurat,
+            meminimalisir rasa mengganjal.
+          </p>
+        </div>
+        <div
+          class="min-w-[240px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 flex flex-col items-center text-center p-5 md:p-6 bg-surface rounded-2xl shadow-sm border border-outline-variant service-card group cursor-pointer anim-card">
+          <div
+            class="w-14 h-14 md:w-16 md:h-16 bg-surface-variant rounded-full flex items-center justify-center mb-5 md:mb-6 service-icon">
+            <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">face</span>
+          </div>
+          <h3
+            class="font-headline-md text-[18px] md:text-[20px] font-semibold text-on-surface mb-2.5 md:mb-3 group-hover:text-[#0088FF] transition-colors">
+            Estetika Alami</h3>
+          <p class="font-body-md text-xs md:text-base text-on-surface-variant">Warna dan bentuk disesuaikan secara
+            personal agar tampak
+            natural.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Highlights Section (Matching Reference Design) -->
+  <section class="py-16 md:py-24 px-gutter bg-white relative sec-observer">
+    <div class="max-w-container-max mx-auto">
+
+      <!-- Section Header (Centered, Reference Style) -->
+      <div class="text-center mb-12 md:mb-16">
+        <span class="text-[12px] md:text-[13px] font-bold uppercase tracking-[0.2em] text-[#0077FF] mb-3 block anim-title-left"
+          style="font-family: 'Inter', sans-serif;">LAYANAN KAMI</span>
+        <h2 class="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-[#0B1E3D] leading-tight mb-4 anim-title-left"
+          style="font-family: 'Inter', sans-serif;">
+          Pilihan Material Terbaik</h2>
+        <p class="text-[14px] md:text-[16px] text-slate-500 max-w-xl mx-auto leading-relaxed anim-sub-right"
+          style="font-family: 'Inter', sans-serif;">
+          Kami menyediakan berbagai opsi material gigi tiruan — masing-masing disesuaikan untuk kenyamanan, estetika,
+          dan
+          kebutuhan fungsional Anda.
+        </p>
+      </div>
+
+      <!-- 4-Card Grid (Horizontal Swipe Snap on Mobile, 4-Col Grid on Desktop) -->
+      <div
+        class="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-none gap-4 md:gap-8 pb-4 md:pb-0 -mx-gutter md:mx-0 px-gutter md:px-0 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Card 1: Valplast -->
+        <a class="min-w-[230px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 anim-card"
+          href="pilihan-gigi.html#valplast">
+          <div
+            class="h-48 md:h-64 relative overflow-hidden bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img alt="Valplast Fleksibel" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="img/valplast.png" />
+          </div>
+          <div class="px-4 md:px-5 py-3.5 md:py-4 bg-white border-t border-slate-100">
+            <div class="flex items-center justify-between">
+              <h3 class="text-[15px] md:text-[18px] font-bold text-[#0B1E3D]" style="font-family: 'Inter', sans-serif;">
+                Valplast (Fleksibel)</h3>
+              <span
+                class="material-symbols-outlined text-slate-400 group-hover:text-[#0077FF] transition-colors text-[18px] md:text-[20px]">arrow_outward</span>
+            </div>
+            <p class="text-[12px] md:text-[13px] text-slate-500 mt-1 leading-relaxed"
+              style="font-family: 'Inter', sans-serif;">
+              Nyaman, ringan, tanpa kawat logam. Estetika sangat natural.</p>
+          </div>
+        </a>
+
+        <!-- Card 2: Akrilik -->
+        <a class="min-w-[230px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 anim-card"
+          href="pilihan-gigi.html#akrilik">
+          <div
+            class="h-48 md:h-64 relative overflow-hidden bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img alt="Akrilik Material" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="img/akrilik.png" />
+          </div>
+          <div class="px-4 md:px-5 py-3.5 md:py-4 bg-white border-t border-slate-100">
+            <div class="flex items-center justify-between">
+              <h3 class="text-[15px] md:text-[18px] font-bold text-[#0B1E3D]" style="font-family: 'Inter', sans-serif;">
+                Akrilik</h3>
+              <span
+                class="material-symbols-outlined text-slate-400 group-hover:text-[#0077FF] transition-colors text-[18px] md:text-[20px]">arrow_outward</span>
+            </div>
+            <p class="text-[12px] md:text-[13px] text-slate-500 mt-1 leading-relaxed"
+              style="font-family: 'Inter', sans-serif;">Kuat,
+              terjangkau, standar industri yang mudah disesuaikan.</p>
+          </div>
+        </a>
+        <!-- Card 3: Kerangka Logam -->
+        <a class="min-w-[230px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 anim-card"
+          href="pilihan-gigi.html#logam">
+          <div
+            class="h-48 md:h-64 relative overflow-hidden bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img alt="Kerangka Logam" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="img/kerangka_logam.png" />
+          </div>
+          <div class="px-4 md:px-5 py-3.5 md:py-4 bg-white border-t border-slate-100">
+            <div class="flex items-center justify-between">
+              <h3 class="text-[15px] md:text-[18px] font-bold text-[#0B1E3D]" style="font-family: 'Inter', sans-serif;">
+                Kerangka Logam</h3>
+              <span
+                class="material-symbols-outlined text-slate-400 group-hover:text-[#0077FF] transition-colors text-[18px] md:text-[20px]">arrow_outward</span>
+            </div>
+            <p class="text-[12px] md:text-[13px] text-slate-500 mt-1 leading-relaxed"
+              style="font-family: 'Inter', sans-serif;">Tahan
+              lama dengan rangka logam presisi, stabil dan kokoh.</p>
+          </div>
+        </a>
+
+        <!-- Card 4: Crown & Bridge -->
+        <a class="min-w-[230px] sm:min-w-[260px] snap-center flex-shrink-0 md:min-w-0 md:flex-shrink-1 group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 anim-card"
+          href="pilihan-gigi.html#crown">
+          <div
+            class="h-48 md:h-64 relative overflow-hidden bg-gradient-to-br from-[#1A3A6B] via-[#2A5A9E] to-[#4A8AD4]">
+            <img alt="Crown & Bridge" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="img/crown_bridge.png" />
+          </div>
+          <div class="px-4 md:px-5 py-3.5 md:py-4 bg-white border-t border-slate-100">
+            <div class="flex items-center justify-between">
+              <h3 class="text-[15px] md:text-[18px] font-bold text-[#0B1E3D]" style="font-family: 'Inter', sans-serif;">
+                Crown &amp; Bridge</h3>
+              <span
+                class="material-symbols-outlined text-slate-400 group-hover:text-[#0077FF] transition-colors text-[18px] md:text-[20px]">arrow_outward</span>
+            </div>
+            <p class="text-[12px] md:text-[13px] text-slate-500 mt-1 leading-relaxed"
+              style="font-family: 'Inter', sans-serif;">
+              Solusi permanen untuk perlindungan maksimal dan fungsi kunyah.</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Bottom CTA Link (Reference Style) -->
+      <div class="text-center mt-10 md:mt-14">
+        <a class="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0077FF] hover:text-[#0055CC] transition-colors tracking-wide"
+          href="pilihan-gigi.html" style="font-family: 'Inter', sans-serif;">
+          Lihat Semua Pilihan
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Transformasi Senyum Section (Single-Row Carousel with Manual Controls) -->
+  <section class="py-16 md:py-24 px-gutter bg-surface-container-low relative overflow-hidden sec-observer">
+    <div class="max-w-container-max mx-auto relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center mb-10 md:mb-12">
+        <span class="text-[12px] md:text-[13px] font-bold uppercase tracking-[0.2em] text-[#0077FF] mb-3 block anim-title-left"
+          style="font-family: 'Inter', sans-serif;">HASIL NYATA</span>
+        <h2 class="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-[#0B1E3D] leading-tight mb-4 anim-title-left"
+          style="font-family: 'Inter', sans-serif;">
+          Transformasi Senyum</h2>
+        <p class="text-[14px] md:text-[16px] text-slate-600 max-w-xl mx-auto leading-relaxed anim-sub-right"
+          style="font-family: 'Inter', sans-serif;">
+          Geser slider pada gambar untuk melihat hasil transformasi sebelum dan sesudah perawatan klinis kami.
+        </p>
+      </div>
+
+      <!-- Carousel Container with Navigation Arrows -->
+      <div class="relative w-full mb-12 group/carousel">
+
+        <!-- Left Arrow -->
+        <button id="ba-prev-btn" onclick="scrollBACarousel(-1)"
+          class="absolute left-2 top-1/2 -translate-y-1/2 z-40 w-11 h-11 rounded-full bg-white/90 shadow-xl border border-slate-200 flex items-center justify-center text-[#0B1E3D] hover:bg-[#0077FF] hover:text-white transition-all opacity-80 group-hover/carousel:opacity-100">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+
+        <!-- Right Arrow -->
+        <button id="ba-next-btn" onclick="scrollBACarousel(1)"
+          class="absolute right-2 top-1/2 -translate-y-1/2 z-40 w-11 h-11 rounded-full bg-white/90 shadow-xl border border-slate-200 flex items-center justify-center text-[#0B1E3D] hover:bg-[#0077FF] hover:text-white transition-all opacity-80 group-hover/carousel:opacity-100">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+
+        <!-- Single Row Track (All 5 Cards Uniform Size) -->
+        <div id="ba-carousel-track"
+          class="flex gap-6 overflow-x-auto scrollbar-none scroll-smooth py-3 px-4 snap-x snap-mandatory">
+
+          <!-- Card 1 -->
+          <div
+            class="ba-card flex-shrink-0 w-[300px] sm:w-[340px] md:w-[370px] h-[320px] md:h-[370px] rounded-2xl overflow-hidden shadow-md select-none border border-slate-200/80 snap-center relative bg-white anim-card">
+            <div class="ba-slider-container relative w-full h-full overflow-hidden">
+              <img src="img/case1_after.jpg" alt="After 1"
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+              <div class="ba-before-wrapper absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                <img src="img/case1_before.jpg" alt="Before 1"
+                  class="ba-before-img absolute top-0 left-0 h-full object-cover max-w-none">
+              </div>
+              <span
+                class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">Before</span>
+              <span
+                class="absolute top-4 right-4 bg-[#FF5722]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">After</span>
+              <div
+                class="ba-handle-line absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
+                style="left: 50%;">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border-2 border-white pointer-events-none">
+                  <i class="fa-solid fa-arrows-left-right text-[#0B1E3D] text-xs"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50"
+                class="ba-range-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                oninput="updateBASlider(this)">
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="ba-card flex-shrink-0 w-[300px] sm:w-[340px] md:w-[370px] h-[320px] md:h-[370px] rounded-2xl overflow-hidden shadow-md select-none border border-slate-200/80 snap-center relative bg-white anim-card">
+            <div class="ba-slider-container relative w-full h-full overflow-hidden">
+              <img src="img/case2_after.jpg" alt="After 2"
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+              <div class="ba-before-wrapper absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                <img src="img/case2_before.jpg" alt="Before 2"
+                  class="ba-before-img absolute top-0 left-0 h-full object-cover max-w-none">
+              </div>
+              <span
+                class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">Before</span>
+              <span
+                class="absolute top-4 right-4 bg-[#FF5722]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">After</span>
+              <div
+                class="ba-handle-line absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
+                style="left: 50%;">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border-2 border-white pointer-events-none">
+                  <i class="fa-solid fa-arrows-left-right text-[#0B1E3D] text-xs"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50"
+                class="ba-range-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                oninput="updateBASlider(this)">
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="ba-card flex-shrink-0 w-[300px] sm:w-[340px] md:w-[370px] h-[320px] md:h-[370px] rounded-2xl overflow-hidden shadow-md select-none border border-slate-200/80 snap-center relative bg-white anim-card">
+            <div class="ba-slider-container relative w-full h-full overflow-hidden">
+              <img src="img/case3_after.jpg" alt="After 3"
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+              <div class="ba-before-wrapper absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                <img src="img/case3_before.jpg" alt="Before 3"
+                  class="ba-before-img absolute top-0 left-0 h-full object-cover max-w-none">
+              </div>
+              <span
+                class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">Before</span>
+              <span
+                class="absolute top-4 right-4 bg-[#FF5722]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">After</span>
+              <div
+                class="ba-handle-line absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
+                style="left: 50%;">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border-2 border-white pointer-events-none">
+                  <i class="fa-solid fa-arrows-left-right text-[#0B1E3D] text-xs"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50"
+                class="ba-range-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                oninput="updateBASlider(this)">
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="ba-card flex-shrink-0 w-[300px] sm:w-[340px] md:w-[370px] h-[320px] md:h-[370px] rounded-2xl overflow-hidden shadow-md select-none border border-slate-200/80 snap-center relative bg-white anim-card">
+            <div class="ba-slider-container relative w-full h-full overflow-hidden">
+              <img src="img/case4_after.jpg" alt="After 4"
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+              <div class="ba-before-wrapper absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                <img src="img/case4_before.jpg" alt="Before 4"
+                  class="ba-before-img absolute top-0 left-0 h-full object-cover max-w-none">
+              </div>
+              <span
+                class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">Before</span>
+              <span
+                class="absolute top-4 right-4 bg-[#FF5722]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">After</span>
+              <div
+                class="ba-handle-line absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
+                style="left: 50%;">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border-2 border-white pointer-events-none">
+                  <i class="fa-solid fa-arrows-left-right text-[#0B1E3D] text-xs"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50"
+                class="ba-range-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                oninput="updateBASlider(this)">
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="ba-card flex-shrink-0 w-[300px] sm:w-[340px] md:w-[370px] h-[320px] md:h-[370px] rounded-2xl overflow-hidden shadow-md select-none border border-slate-200/80 snap-center relative bg-white anim-card">
+            <div class="ba-slider-container relative w-full h-full overflow-hidden">
+              <img src="img/case5_after.jpg" alt="After 5"
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+              <div class="ba-before-wrapper absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                <img src="img/case5_before.jpg" alt="Before 5"
+                  class="ba-before-img absolute top-0 left-0 h-full object-cover max-w-none">
+              </div>
+              <span
+                class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">Before</span>
+              <span
+                class="absolute top-4 right-4 bg-[#FF5722]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full pointer-events-none tracking-wider border border-white/20">After</span>
+              <div
+                class="ba-handle-line absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
+                style="left: 50%;">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border-2 border-white pointer-events-none">
+                  <i class="fa-solid fa-arrows-left-right text-[#0B1E3D] text-xs"></i>
+                </div>
+              </div>
+              <input type="range" min="0" max="100" value="50"
+                class="ba-range-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                oninput="updateBASlider(this)">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="text-center anim-card">
+        <a class="inline-flex items-center gap-3 bg-[#FF5722] hover:bg-[#E64A19] text-white text-[14px] md:text-[16px] px-8 md:px-10 py-3.5 md:py-4 rounded-full transition-all duration-300 shadow-[0_10px_30px_rgba(255,87,34,0.3)] hover:-translate-y-0.5 font-bold tracking-wide"
+          href="galeri.html" style="font-family: 'Inter', sans-serif;">
+          Lihat Galeri Hasil Selengkapnya
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Interactive Slider Script -->
+    <script>
+      function updateBASlider(input) {
+        const container = input.closest('.ba-slider-container');
+        if (!container) return;
+        const val = input.value;
+        const beforeWrapper = container.querySelector('.ba-before-wrapper');
+        const handleLine = container.querySelector('.ba-handle-line');
+        const beforeImg = container.querySelector('.ba-before-img');
+
+        if (beforeWrapper) beforeWrapper.style.width = val + '%';
+        if (handleLine) handleLine.style.left = val + '%';
+        if (beforeImg) beforeImg.style.width = container.offsetWidth + 'px';
+      }
+
+      function initBASliders() {
+        document.querySelectorAll('.ba-slider-container').forEach(container => {
+          const beforeImg = container.querySelector('.ba-before-img');
+          const input = container.querySelector('.ba-range-input');
+          if (beforeImg && container) {
+            beforeImg.style.width = container.offsetWidth + 'px';
+          }
+          if (input) updateBASlider(input);
+        });
+      }
+
+      function scrollBACarousel(direction) {
+        const track = document.getElementById('ba-carousel-track');
+        if (!track) return;
+        track.scrollBy({ left: direction * 380, behavior: 'smooth' });
+      }
+
+      document.addEventListener('DOMContentLoaded', initBASliders);
+      window.addEventListener('resize', initBASliders);
+      setTimeout(initBASliders, 300);
+    </script>
+  </section>
+
+  <!-- Apa Kata Pasien Section -->
+  <section class="py-16 md:py-24 bg-white relative overflow-hidden sec-observer" id="reviews-section">
+
+    <!-- CSS for marquee animations -->
+    <style>
+      @keyframes marqueeLeft {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes marqueeRight {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .marquee-row {
+        display: flex;
+        width: max-content;
+      }
+
+      .marquee-left {
+        animation: marqueeLeft 40s linear infinite;
+      }
+
+      .marquee-right {
+        animation: marqueeRight 45s linear infinite;
+      }
+
+      .marquee-row:hover {
+        animation-play-state: paused;
+      }
+
+      .review-card {
+        width: 360px;
+        min-height: 180px;
+        flex-shrink: 0;
+        margin: 0 12px;
+        background: linear-gradient(145deg, #f8fafc 0%, #ffffff 100%);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: default;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .review-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #0077FF, #00C6FF);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .review-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 119, 255, 0.1);
+        border-color: rgba(0, 119, 255, 0.2);
+      }
+
+      .review-card:hover::before {
+        opacity: 1;
+      }
+
+      .review-card .quote-icon {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 48px;
+        line-height: 1;
+        color: rgba(0, 119, 255, 0.06);
+        font-family: Georgia, serif;
+        pointer-events: none;
+      }
+
+      .marquee-fade-left,
+      .marquee-fade-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 120px;
+        z-index: 10;
+        pointer-events: none;
+      }
+
+      .marquee-fade-left {
+        left: 0;
+        background: linear-gradient(to right, white 0%, transparent 100%);
+      }
+
+      .marquee-fade-right {
+        right: 0;
+        background: linear-gradient(to left, white 0%, transparent 100%);
+      }
+
+      .scrollbar-none::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      @media (max-width: 767px) {
+        .review-card {
+          width: 255px !important;
+          min-height: 155px !important;
+          margin: 0 6px !important;
+          padding: 16px !important;
+          border-radius: 16px !important;
+        }
+
+        .review-card .quote-icon {
+          font-size: 34px !important;
+          top: 10px !important;
+          right: 12px !important;
+        }
+
+        .marquee-fade-left,
+        .marquee-fade-right {
+          width: 28px !important;
+        }
+      }
+    </style>
+
+    <!-- Section Header -->
+    <div class="text-center mb-12 md:mb-14 px-gutter">
+      <h2 class="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-[#0B1E3D] leading-tight mb-4 anim-title-left"
+        style="font-family: 'Inter', sans-serif;">
+        Apa Kata Pasien Kami</h2>
+      <p class="text-[14px] md:text-[16px] text-slate-500 max-w-xl mx-auto leading-relaxed anim-sub-right"
+        style="font-family: 'Inter', sans-serif;">
+        Kepuasan dan kenyamanan pasien adalah komitmen utama kami dalam setiap perawatan.
+      </p>
+    </div>
+
+    <!-- Marquee Row 1 (scrolls left) — 8 reviews -->
+    <div class="relative mb-6 anim-card">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-wrapper overflow-hidden">
+        <div class="marquee-row marquee-left">
+          <!-- Original 8 cards -->
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#0077FF] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">B</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Budi Santoso</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Pelayanan
+              sangat ramah dan profesional. Gigi palsu yang dibuat sangat pas dan nyaman dipakai makan, tidak ada rasa
+              mengganjal sama sekali."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">R</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ratna Wijaya</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Hasilnya
+              sangat rapi dan natural. Harganya transparan sejak awal konsul. Dokternya sangat sabar menjelaskan proses
+              pembuatannya."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">H</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Hendra Kusuma
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sangat puas
+              dengan hasilnya. Garansi adjustment-nya beneran berguna sampai benar-benar pas di mulut. Sangat
+              direkomendasikan!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#9C27B0] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">S</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Siti Aminah</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi tiruan
+              yang dibuat sangat bagus, warnanya mirip gigi asli. Teman-teman kantor sampai nggak sadar. Terima kasih
+              Zaky Dental!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#E91E63] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">D</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Dewi Lestari</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sudah 6 bulan
+              pemakaian, masih nyaman dan kuat. Proses cetaknya teliti sekali, hasilnya presisi dan pas di mulut."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#00BCD4] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">A</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ahmad Fauzi</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi depan
+              saya jadi terlihat sempurna lagi. Prosesnya cepat dan hasilnya luar biasa natural. Dokternya detail banget
+              ngerjainnya."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF9800] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">M</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Maya Putri</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Awalnya malu
+              pakai gigi palsu, tapi setelah dibuatkan di sini hasilnya natural banget. Sekarang jadi percaya diri lagi
+              senyum di depan orang."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#607D8B] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">T</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Tono Prasetyo
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Harga sangat
+              terjangkau untuk kualitas sebagus ini. Garansi free adjustment sampai nyaman juga bikin saya tenang.
+              Recommended banget!"</p>
+          </div>
+
+          <!-- Duplicate 8 cards for infinite loop -->
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#0077FF] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">B</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Budi Santoso</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Pelayanan
+              sangat ramah dan profesional. Gigi palsu yang dibuat sangat pas dan nyaman dipakai makan, tidak ada rasa
+              mengganjal sama sekali."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">R</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ratna Wijaya</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Hasilnya
+              sangat rapi dan natural. Harganya transparan sejak awal konsul. Dokternya sangat sabar menjelaskan proses
+              pembuatannya."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">H</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Hendra Kusuma
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sangat puas
+              dengan hasilnya. Garansi adjustment-nya beneran berguna sampai benar-benar pas di mulut. Sangat
+              direkomendasikan!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#9C27B0] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">S</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Siti Aminah</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi tiruan
+              yang dibuat sangat bagus, warnanya mirip gigi asli. Teman-teman kantor sampai nggak sadar. Terima kasih
+              Zaky Dental!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#E91E63] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">D</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Dewi Lestari</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sudah 6 bulan
+              pemakaian, masih nyaman dan kuat. Proses cetaknya teliti sekali, hasilnya presisi dan pas di mulut."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#00BCD4] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">A</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ahmad Fauzi</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi depan
+              saya jadi terlihat sempurna lagi. Prosesnya cepat dan hasilnya luar biasa natural. Dokternya detail banget
+              ngerjainnya."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF9800] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">M</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Maya Putri</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Awalnya malu
+              pakai gigi palsu, tapi setelah dibuatkan di sini hasilnya natural banget. Sekarang jadi percaya diri lagi
+              senyum di depan orang."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#607D8B] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">T</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Tono Prasetyo
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Harga sangat
+              terjangkau untuk kualitas sebagus ini. Garansi free adjustment sampai nyaman juga bikin saya tenang.
+              Recommended banget!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee Row 2 (scrolls right) — 7 reviews -->
+    <div class="relative anim-card">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-wrapper overflow-hidden">
+        <div class="marquee-row marquee-right">
+          <!-- Original 7 cards -->
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#3F51B5] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">W</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Wahyu Hidayat
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Tempatnya
+              bersih dan nyaman. Alat-alatnya modern dan steril. Saya yang biasanya takut ke dokter gigi jadi merasa
+              tenang di sini."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#795548] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">N</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ningsih Rahayu
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sudah
+              langganan di sini sejak 2 tahun lalu. Setiap kali butuh perbaikan gigi, selalu percaya sama Zaky Dental.
+              Nggak pernah kecewa!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#009688] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">F</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Fajar Nugroho
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Bapak saya
+              umur 65 tahun dibuatkan gigi palsu di sini. Sekarang beliau bisa makan dengan nyaman lagi. Terima kasih
+              banyak dokter!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF6F00] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">L</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Linda Permata
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Konsultasi
+              pertama langsung dikasih penjelasan lengkap beserta estimasi biaya. Sangat transparan dan tidak ada biaya
+              tersembunyi."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#4CAF50] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">I</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Irfan Maulana
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi saya
+              yang patah dibuatkan crown dan hasilnya sempurna. Warnanya match sama gigi asli, nggak keliatan beda sama
+              sekali."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#AB47BC] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">Y</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Yuni Astuti</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Dokternya
+              sangat ramah dan telaten. Saya yang awalnya takut banget sama dokter gigi jadi merasa nyaman. Pasti balik
+              lagi!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#EF5350] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">P</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Putra Adhitya
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Prosesnya
+              cepat dan tidak ribet. Dalam 3 kali kunjungan gigi tiruan saya sudah jadi dan langsung pas. Worth it
+              banget!"</p>
+          </div>
+
+          <!-- Duplicate 7 cards for infinite loop -->
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#3F51B5] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">W</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Wahyu Hidayat
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Tempatnya
+              bersih dan nyaman. Alat-alatnya modern dan steril. Saya yang biasanya takut ke dokter gigi jadi merasa
+              tenang di sini."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#795548] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">N</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Ningsih Rahayu
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Sudah
+              langganan di sini sejak 2 tahun lalu. Setiap kali butuh perbaikan gigi, selalu percaya sama Zaky Dental.
+              Nggak pernah kecewa!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#009688] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">F</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Fajar Nugroho
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Bapak saya
+              umur 65 tahun dibuatkan gigi palsu di sini. Sekarang beliau bisa makan dengan nyaman lagi. Terima kasih
+              banyak dokter!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#FF6F00] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">L</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Linda Permata
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Konsultasi
+              pertama langsung dikasih penjelasan lengkap beserta estimasi biaya. Sangat transparan dan tidak ada biaya
+              tersembunyi."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#4CAF50] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">I</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Irfan Maulana
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Gigi saya
+              yang patah dibuatkan crown dan hasilnya sempurna. Warnanya match sama gigi asli, nggak keliatan beda sama
+              sekali."</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#AB47BC] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">Y</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Yuni Astuti</h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Dokternya
+              sangat ramah dan telaten. Saya yang awalnya takut banget sama dokter gigi jadi merasa nyaman. Pasti balik
+              lagi!"</p>
+          </div>
+
+          <div class="review-card">
+            <span class="quote-icon">"</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 rounded-full bg-[#EF5350] text-white flex items-center justify-center font-bold text-sm"
+                style="font-family:'Inter',sans-serif;">P</div>
+              <h4 class="font-bold text-[#0B1E3D] text-[14px]" style="font-family:'Inter',sans-serif;">Putra Adhitya
+              </h4>
+            </div>
+            <div class="flex text-amber-400 gap-0.5 mb-2">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <p class="text-[13px] text-slate-600 leading-relaxed" style="font-family:'Inter',sans-serif;">"Prosesnya
+              cepat dan tidak ribet. Dalam 3 kali kunjungan gigi tiruan saya sudah jadi dan langsung pas. Worth it
+              banget!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer (With Integrated Location, Schedule & Navigation) -->
+  <footer class="bg-[#0B1E3D] text-white py-4 pb-16 md:py-4 px-gutter border-t border-slate-800">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-start">
+
+      <!-- Col 1: Brand Info & Social Media (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col space-y-2.5 pt-8 md:pt-10">
+        <div class="flex items-center h-9">
+          <span class="text-2xl font-bold text-white tracking-wide leading-none"
+            style="font-family: 'Inter', sans-serif;">Zaky
+            Dental</span>
+        </div>
+        <p class="text-slate-300 text-sm md:text-[15px] leading-relaxed" style="font-family: 'Inter', sans-serif;">
+          Spesialis Pembuatan & Pemasangan Gigi Tiruan (Akrilik, Valplast, Kerangka Logam, Crown & Bridge) dengan
+          Garansi Penyesuaian Bebas.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-3 pt-0.5">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#E4405F] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-black text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-tiktok text-sm"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#FF0000] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-youtube text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col pt-8 md:pt-10">
+        <div class="h-9 flex items-center mb-2.5 border-b border-slate-700/60 pb-1.5">
+          <h3 class="font-bold text-white text-base uppercase tracking-wider" style="font-family: 'Inter', sans-serif;">
+            Navigasi Utama</h3>
+        </div>
+        <ul class="space-y-2 text-sm md:text-[15px] text-slate-200" style="font-family: 'Inter', sans-serif;">
+          <li><a href="index.html" class="hover:text-[#00C6FF] transition-colors font-medium">Beranda</a></li>
+          <li><a href="pilihan-gigi.html" class="hover:text-[#00C6FF] transition-colors font-medium">Pilihan Gigi
+              Tiruan</a></li>
+          <li><a href="estimasi-biaya.html" class="hover:text-[#00C6FF] transition-colors font-medium">Estimasi
+              Biaya</a></li>
+          <li><a href="galeri.html" class="hover:text-[#00C6FF] transition-colors font-medium">Galeri Before-After</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 & 4: Google Maps Embed (lg:col-span-2) -->
+      <div class="lg:col-span-2 flex flex-col justify-start">
+        <div
+          class="h-[250px] min-h-[250px] w-full rounded-xl overflow-hidden border border-slate-700/80 shadow-md relative bg-slate-800 pointer-events-auto">
+          <iframe title="Google Maps Zaky Dental"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15852.793264936496!2d106.845012!3d-6.647101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e7b23df7a7%3A0x401e8f1fc28c660!2sCiawi%2C%20Bogor%20Regency%2C%20West%20Java!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="100%" height="100%" style="border:0; pointer-events: auto;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="fixed bottom-28 md:bottom-8 right-6 z-50 bg-[#10B981] hover:bg-[#059669] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-colors pulse-emerald group"
+    href="https://wa.me/6281939198806?text=Halo%20Zaky%20Dental,%20saya%20ingin%20konsultasi%20langsung."
+    target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <span class="material-symbols-outlined text-3xl">chat</span>
+  </a>
+
+  <!-- Floating BottomNavBar Glass Pill (Mobile App Navigation) -->
+  <nav
+    class="fixed bottom-3 left-4 right-4 z-50 md:hidden bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_30px_rgba(11,30,61,0.15)] rounded-full px-2 py-1.5 flex justify-around items-center">
+    <a href="index.html"
+      class="flex items-center gap-1 px-3.5 py-1.5 rounded-full transition-all text-white bg-[#FF5722] font-bold shadow-md shadow-[#FF5722]/30">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">home</span>
+      <span class="text-xs">Beranda</span>
+    </a>
+    <a href="pilihan-gigi.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">medical_services</span>
+      <span class="text-xs font-medium">Gigi</span>
+    </a>
+    <a href="estimasi-biaya.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">calculate</span>
+      <span class="text-xs font-medium">Biaya</span>
+    </a>
+    <a href="galeri.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">photo_library</span>
+      <span class="text-xs font-medium">Galeri</span>
+    </a>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Micro-staggered Observer for Sections
+      // Animations WILL NOT APPEAR until the user actually scrolls into each section!
+      const scrollGroups = document.querySelectorAll('.sec-observer');
+      
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -60px 0px',
+        threshold: 0.08
+      };
+
+      const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      scrollGroups.forEach(group => sectionObserver.observe(group));
+    });
+  </script>
+</body>
+
+</html>

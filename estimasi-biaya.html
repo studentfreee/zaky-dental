@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Estimasi Biaya Transparan - Zaky Dental</title>
+  <meta name="description"
+    content="Hitung biaya pembuatan gigi tiruan Anda secara mudah dan transparan. Tidak ada biaya tersembunyi, komitmen kami pada kejelasan dan kepercayaan pasien.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Micro-Staggered Elements Inside Each Scroll Section for Estimasi Biaya */
+    .sec-observer .anim-title-left {
+      opacity: 0;
+      transform: translateX(-35px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.1s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-sub-right {
+      opacity: 0;
+      transform: translateX(35px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      transition-delay: 0.25s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer .anim-card {
+      opacity: 0;
+      transform: scale(0.9) translateY(35px);
+      transition: opacity 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition-delay: 0.35s;
+      will-change: opacity, transform;
+    }
+
+    .sec-observer.in-view .anim-title-left,
+    .sec-observer.in-view .anim-sub-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .sec-observer.in-view .anim-card {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  </style>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#D0E4FF",
+            "surface-bright": "#FFFFFF",
+            "inverse-primary": "#80C4FF",
+            "primary-container": "#0B1E3D",
+            "secondary": "#4B5563",
+            "on-secondary": "#FFFFFF",
+            "on-error-container": "#93000a",
+            "on-primary-fixed": "#0B1E3D",
+            "on-surface": "#0B1E3D",
+            "on-primary-container": "#99CCFF",
+            "error-container": "#ffdad6",
+            "primary": "#0B1E3D",
+            "primary-blue": "#0088FF",
+            "accent-orange": "#FF5722",
+            "surface-container-lowest": "#FFFFFF",
+            "on-secondary-container": "#4B5563",
+            "on-tertiary-fixed": "#271901",
+            "surface-container-highest": "#D8ECFF",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#475569",
+            "on-tertiary-fixed-variant": "#574425",
+            "on-tertiary": "#FFFFFF",
+            "outline": "#94A3B8",
+            "on-error": "#FFFFFF",
+            "surface-tint": "#0088FF",
+            "secondary-container": "#E2E8F0",
+            "on-secondary-fixed": "#191c1e",
+            "surface-container": "#F0F7FF",
+            "background": "#FFFFFF",
+            "on-primary": "#FFFFFF",
+            "tertiary-fixed-dim": "#dec29a",
+            "on-secondary-fixed-variant": "#444749",
+            "secondary-fixed": "#E2E8F0",
+            "primary-fixed": "#D0E4FF",
+            "secondary-fixed-dim": "#CBD5E1",
+            "inverse-surface": "#0B1E3D",
+            "primary-fixed-dim": "#80C4FF",
+            "on-background": "#0B1E3D",
+            "surface-variant": "#E6F2FF",
+            "tertiary": "#FF5722",
+            "on-tertiary-container": "#98805d",
+            "tertiary-fixed": "#fcdeb5",
+            "on-primary-fixed-variant": "#0066CC",
+            "surface-container-low": "#F4F9FF",
+            "surface": "#FFFFFF",
+            "tertiary-container": "#271901",
+            "outline-variant": "#CBD5E1",
+            "inverse-on-surface": "#F0F7FF",
+            "surface-container-high": "#E2F0FF"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-padding-desktop": "120px",
+            "section-padding-mobile": "64px",
+            "gutter": "24px",
+            "container-max": "1280px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .pulse-emerald {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
+
+  <!-- TopNavBar (Floating Glassmorphic - Desktop Only) -->
+  <header
+    class="hidden md:block fixed top-3 md:top-4 left-0 right-0 z-50 px-gutter max-w-container-max mx-auto transition-all duration-300 pointer-events-none"
+    id="main-header">
+    <div
+      class="bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-lg shadow-slate-900/5 rounded-full px-5 md:px-8 py-2.5 md:py-3 flex justify-between items-center w-full pointer-events-auto">
+      <!-- Brand (Text Only) -->
+      <a href="index.html" class="flex items-center group">
+        <span
+          class="text-xl md:text-2xl font-bold text-[#0B1E3D] tracking-tight group-hover:text-[#0088FF] transition-colors"
+          style="font-family: 'Plus Jakarta Sans', sans-serif;">
+          Zaky Dental
+        </span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="hidden md:flex gap-1.5 items-center">
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="index.html">Beranda</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="pilihan-gigi.html">Pilihan Gigi</a>
+        <a class="px-4 py-2 rounded-full text-sm font-bold text-[#FF5722] bg-[#FF5722]/10 transition-all duration-200"
+          href="estimasi-biaya.html">Estimasi Biaya</a>
+        <a class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-[#FF5722] hover:bg-slate-100 transition-all duration-200"
+          href="galeri.html">Galeri Before-After</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main
+    class="flex-grow w-full px-gutter max-w-container-max mx-auto pt-20 md:pt-32 pb-16 flex flex-col gap-8 md:gap-12 sec-observer">
+    <!-- Header -->
+    <header class="text-center max-w-3xl mx-auto">
+      <h1 class="font-headline-xl text-headline-xl text-primary mb-4 md:font-headline-xl anim-title-left">Estimasi Biaya Transparan</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant anim-sub-right">Hitung biaya pembuatan gigi tiruan Anda secara mudah
+        dan transparan. Tidak ada biaya tersembunyi, komitmen kami pada kejelasan dan kepercayaan pasien.</p>
+    </header>
+    <!-- Estimator & Features Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+      <!-- Interactive Estimator -->
+      <section
+        class="lg:col-span-7 bg-white rounded-2xl shadow-md border border-slate-200/90 p-6 md:p-10 flex flex-col gap-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(11,30,61,0.12)] hover:border-[#0088FF]/40 anim-card">
+        <h2 class="font-headline-md text-headline-md text-primary font-bold">Kalkulator Estimasi</h2>
+        <form class="flex flex-col gap-6" id="estimatorForm">
+          <!-- Step 1 -->
+          <div>
+            <label class="block font-label-md text-label-md text-primary mb-3 font-bold">1. Pilih Jenis Gigi
+              Tiruan</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="cursor-pointer relative">
+                <input checked="" class="peer sr-only" name="dentureType" type="radio" value="lepasan">
+                <div
+                  class="p-4 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container peer-checked:border-primary peer-checked:bg-surface-container-low transition-all h-full">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="font-label-md text-label-md text-primary font-bold">Gigi Tiruan Lepasan</span>
+                    <span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+                  </div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Solusi fleksibel dan mudah dibersihkan.
+                    Cocok untuk penggantian beberapa gigi.</p>
+                </div>
+              </label>
+              <label class="cursor-pointer relative">
+                <input class="peer sr-only" name="dentureType" type="radio" value="permanen">
+                <div
+                  class="p-4 rounded-lg border border-outline-variant bg-surface hover:bg-surface-container peer-checked:border-primary peer-checked:bg-surface-container-low transition-all h-full">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="font-label-md text-label-md text-primary font-bold">Gigi Tiruan Permanen</span>
+                    <span class="material-symbols-outlined text-primary" data-icon="implants">save_as</span>
+                  </div>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Bridge/Implan yang kokoh dan menyerupai
+                    gigi asli. Investasi jangka panjang.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div>
+            <label class="block font-label-md text-label-md text-primary mb-3 font-bold">2. Jumlah Gigi yang
+              Hilang</label>
+            <div class="flex items-center gap-4">
+              <input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-[#131b2e]"
+                id="toothSlider" max="14" min="1" type="range" value="1">
+              <span class="font-headline-md text-headline-md text-primary w-12 text-center font-bold"
+                id="toothCountDisplay">1</span>
+            </div>
+            <div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant mt-2 px-1">
+              <span class="">1 Gigi</span>
+              <span class="">Satu Rahang (14)</span>
+            </div>
+          </div>
+          <div class="border-t border-surface-container my-2"></div>
+          <!-- Result -->
+          <div class="bg-surface-container-low p-6 rounded-lg text-center">
+            <span class="block font-label-md text-label-md text-on-surface-variant mb-2 font-semibold">Estimasi Biaya
+              Anda</span>
+            <div class="font-headline-lg text-headline-lg text-primary font-bold" id="priceResult">Rp 1.500.000 - Rp
+              3.000.000</div>
+            <p class="font-label-sm text-label-sm text-on-surface-variant mt-2">*Harga akhir ditentukan setelah
+              konsultasi dan pemeriksaan kondisi klinis.</p>
+          </div>
+          <!-- CTA -->
+          <a class="w-full bg-[#FF5722] text-white py-4 rounded-full font-bold text-sm md:text-base hover:bg-[#E64A19] shadow-lg shadow-[#FF5722]/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-0.5"
+            id="sendWaBtn" href="https://wa.me/6281939198806" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+            Kirim Rincian ke WhatsApp
+          </a>
+        </form>
+      </section>
+      <!-- Facilities Included -->
+      <section class="lg:col-span-5 flex flex-col gap-6">
+        <div class="bg-surface-container-low rounded-xl p-8 h-full flex flex-col justify-center">
+          <h3 class="font-headline-md text-headline-md text-primary mb-6 font-bold">Fasilitas Termasuk</h3>
+          <ul class="flex flex-col gap-6">
+            <li class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-surface flex items-center justify-center shrink-0 shadow-sm text-primary">
+                <span class="material-symbols-outlined" data-icon="3d_rotation">3d_rotation</span>
+              </div>
+              <div>
+                <h4 class="font-label-md text-label-md text-primary mb-1 font-bold">Cetak Rahang Gratis</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Pencetakan presisi tinggi untuk memastikan
+                  fitting yang sempurna tanpa biaya tambahan.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-surface flex items-center justify-center shrink-0 shadow-sm text-primary">
+                <span class="material-symbols-outlined" data-icon="medical_information">medical_information</span>
+              </div>
+              <div>
+                <h4 class="font-label-md text-label-md text-primary mb-1 font-bold">Konsultasi Awal</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Diskusi mendalam dengan dokter spesialis
+                  kami mengenai kebutuhan dan ekspektasi Anda.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-surface flex items-center justify-center shrink-0 shadow-sm text-primary">
+                <span class="material-symbols-outlined" data-icon="verified">verified</span>
+              </div>
+              <div>
+                <h4 class="font-label-md text-label-md text-primary mb-1 font-bold">Garansi Fitting</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Penyesuaian gratis pasca-pemasangan hingga
+                  Anda merasa sepenuhnya nyaman.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Trust Image Context -->
+        <div
+          class="bg-cover bg-center w-full h-48 rounded-xl shadow-[0px_4px_20px_rgba(15,23,42,0.05)] border border-surface-container"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBsjCnZWh4yF4yA_KH7CQQwfjzA2tOeWNNUVyNDjYfb9vAS9D9gj_JhdBeQ_-0HHaNzy6880T4-NRaszDb6lY5pZpTdg1RjM3AD8ManNLPAG4pAc8kKiTEGNkd-a2AlD2ulnBJY_s8gxs5G4rRC0E-W7VdTx0gF3ySnKm0ylT2q51-ymXyo_r0UtsUbZQiYPxWmUH6rv7_821owQTQ1tv2shV2h50r_bGyl6q3Ws-SeQ_-V36k-V0uGA')">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer (With Integrated Location, Schedule & Navigation) -->
+  <footer class="bg-[#0B1E3D] text-white py-4 pb-16 md:py-4 px-gutter border-t border-slate-800">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-start">
+
+      <!-- Col 1: Brand Info & Social Media (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col space-y-2.5 pt-8 md:pt-10">
+        <div class="flex items-center h-9">
+          <span class="text-2xl font-bold text-white tracking-wide leading-none"
+            style="font-family: 'Inter', sans-serif;">Zaky
+            Dental</span>
+        </div>
+        <p class="text-slate-300 text-sm md:text-[15px] leading-relaxed" style="font-family: 'Inter', sans-serif;">
+          Spesialis Pembuatan & Pemasangan Gigi Tiruan (Akrilik, Valplast, Kerangka Logam, Crown & Bridge) dengan
+          Garansi Penyesuaian Bebas.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-3 pt-0.5">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#E4405F] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-black text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-tiktok text-sm"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube Zaky Dental"
+            class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-[#FF0000] text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm">
+            <i class="fa-brands fa-youtube text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation (Shifted Further Downwards with pt-8 md:pt-10) -->
+      <div class="flex flex-col pt-8 md:pt-10">
+        <div class="h-9 flex items-center mb-2.5 border-b border-slate-700/60 pb-1.5">
+          <h3 class="font-bold text-white text-base uppercase tracking-wider" style="font-family: 'Inter', sans-serif;">
+            Navigasi Utama</h3>
+        </div>
+        <ul class="space-y-2 text-sm md:text-[15px] text-slate-200" style="font-family: 'Inter', sans-serif;">
+          <li><a href="index.html" class="hover:text-[#00C6FF] transition-colors font-medium">Beranda</a></li>
+          <li><a href="pilihan-gigi.html" class="hover:text-[#00C6FF] transition-colors font-medium">Pilihan Gigi
+              Tiruan</a></li>
+          <li><a href="estimasi-biaya.html" class="hover:text-[#00C6FF] transition-colors font-medium">Estimasi
+              Biaya</a></li>
+          <li><a href="galeri.html" class="hover:text-[#00C6FF] transition-colors font-medium">Galeri Before-After</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 & 4: Google Maps Embed (lg:col-span-2) -->
+      <div class="lg:col-span-2 flex flex-col justify-start">
+        <div
+          class="h-[250px] min-h-[250px] w-full rounded-xl overflow-hidden border border-slate-700/80 shadow-md relative bg-slate-800 pointer-events-auto">
+          <iframe title="Google Maps Zaky Dental"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15852.793264936496!2d106.845012!3d-6.647101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e7b23df7a7%3A0x401e8f1fc28c660!2sCiawi%2C%20Bogor%20Regency%2C%20West%20Java!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="100%" height="100%" style="border:0; pointer-events: auto;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="fixed bottom-28 md:bottom-8 right-6 z-50 bg-[#10B981] hover:bg-[#059669] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-colors pulse-emerald group"
+    href="https://wa.me/6281939198806?text=Halo%20Zaky%20Dental,%20saya%20ingin%20konsultasi%20mengenai%20estimasi%20biaya."
+    target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <span class="material-symbols-outlined text-3xl">chat</span>
+  </a>
+
+  <!-- Floating BottomNavBar Glass Pill (Mobile App Navigation) -->
+  <nav
+    class="fixed bottom-3 left-4 right-4 z-50 md:hidden bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_10px_30px_rgba(11,30,61,0.15)] rounded-full px-2 py-1.5 flex justify-around items-center">
+    <a href="index.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">home</span>
+      <span class="text-xs font-medium">Beranda</span>
+    </a>
+    <a href="pilihan-gigi.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">medical_services</span>
+      <span class="text-xs font-medium">Gigi</span>
+    </a>
+    <a href="estimasi-biaya.html"
+      class="flex items-center gap-1 px-3.5 py-1.5 rounded-full transition-all text-white bg-[#FF5722] font-bold shadow-md shadow-[#FF5722]/30">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">calculate</span>
+      <span class="text-xs">Biaya</span>
+    </a>
+    <a href="galeri.html"
+      class="flex items-center gap-1 px-3 py-1.5 rounded-full transition-all text-slate-600 hover:text-[#0B1E3D]">
+      <span class="material-symbols-outlined text-xl">photo_library</span>
+      <span class="text-xs font-medium">Galeri</span>
+    </a>
+  </nav>
+
+  <script>
+    // Estimator logic & WhatsApp integration
+    const WA_NUMBER = "6281939198806";
+    const typeRadios = document.querySelectorAll('input[name="dentureType"]');
+    const toothSlider = document.getElementById('toothSlider');
+    const toothCountDisplay = document.getElementById('toothCountDisplay');
+    const priceResult = document.getElementById('priceResult');
+    const sendWaBtn = document.getElementById('sendWaBtn');
+
+    function formatIDR(num) {
+      return "Rp " + num.toLocaleString('id-ID');
+    }
+
+    function updateEstimate() {
+      const selectedRadio = document.querySelector('input[name="dentureType"]:checked');
+      const isPermanent = selectedRadio ? selectedRadio.value === 'permanen' : false;
+      const count = parseInt(toothSlider.value, 10) || 1;
+      toothCountDisplay.textContent = count;
+
+      let basePriceMin, basePriceMax;
+      let dentureTypeName;
+
+      if (isPermanent) {
+        dentureTypeName = "Gigi Tiruan Permanen (Bridge/Implan)";
+        basePriceMin = 2500000 * count;
+        basePriceMax = 5000000 * count;
+      } else {
+        dentureTypeName = "Gigi Tiruan Lepasan";
+        basePriceMin = 1500000 + (300000 * (count - 1));
+        basePriceMax = 3000000 + (500000 * (count - 1));
+      }
+
+      const priceText = `${formatIDR(basePriceMin)} - ${formatIDR(basePriceMax)}`;
+      priceResult.textContent = priceText;
+
+      // Encoded WhatsApp URL
+      const rawMessage = `Halo Zaky Dental, saya ingin berkonsultasi mengenai estimasi biaya pemasangan gigi tiruan:\n\n` +
+        `• Jenis Gigi: ${dentureTypeName}\n` +
+        `• Jumlah Gigi Hilang: ${count} gigi\n` +
+        `• Estimasi Biaya Web: ${priceText}\n\n` +
+        `Apakah bisa dijadwalkan konsultasi awal & cetak rahang gratis? Terima kasih.`;
+
+      sendWaBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(rawMessage)}`;
+    }
+
+    typeRadios.forEach(radio => radio.addEventListener('change', updateEstimate));
+    if (toothSlider) {
+      toothSlider.addEventListener('input', updateEstimate);
+    }
+
+    // Initial calculation
+    updateEstimate();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollGroups = document.querySelectorAll('.sec-observer');
+      const observerOptions = { root: null, rootMargin: '0px 0px -50px 0px', threshold: 0.08 };
+      const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      scrollGroups.forEach(group => sectionObserver.observe(group));
+    });
+  </script>
+
+</body>
+
+</html>
