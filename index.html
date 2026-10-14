@@ -119,6 +119,15 @@
       animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
     }
 
+    /* Mobile-only override: keep tooth compact on mobile (< 768px) */
+    @media (max-width: 767px) {
+      .hero-tooth-responsive {
+        transform: rotate(4deg) translateY(4px) !important;
+        width: 215px !important;
+        max-width: 65vw !important;
+      }
+    }
+
     @keyframes pulse-ring {
       0% {
         transform: scale(0.95);
@@ -249,25 +258,19 @@
       <div class="relative z-10 w-full text-center mt-0 mb-1 md:mb-0">
         <h1
           class="text-[clamp(1.95rem,7.8vw,3.2rem)] md:text-[clamp(2.8rem,9.2vw,9.5rem)] font-normal leading-[0.98] md:leading-[0.9] uppercase select-none text-center whitespace-normal md:whitespace-nowrap w-full relative top-[4px] md:top-[18px] px-1 md:px-0"
-          style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em;">
+          style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.07em;">
           <span class="text-[#6BBFFF] inline-block">SETIAP SENYUM </span><span class="text-[#0077FF] inline-block">BERARTI</span>
         </h1>
       </div>
 
-      <!-- 3-Area Content Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-3.5 sm:gap-4 md:gap-6 lg:gap-8 items-center relative z-10 pt-1 md:pt-4">
-
-        <!-- Center Column on Mobile (Tooth Visual) / Middle Column on Desktop -->
-        <div class="md:col-span-4 flex items-center justify-center order-1 md:order-2 relative z-20 my-1 md:my-0">
-          <img src="img/hero_gigi.png" alt="Yaki Dental Hero Tooth Visual"
-            class="hero-tooth-img w-[200px] sm:w-[240px] max-w-[65vw] md:max-w-none md:w-[520px] lg:w-[610px] md:-my-14 lg:-my-18 h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,136,255,0.25)] relative z-20 pointer-events-auto">
-        </div>
+      <!-- 3-Area Content Grid (Shifted down ~15px for centered vertical composition) -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 lg:gap-8 items-center relative z-10 pt-1 md:pt-4">
 
         <!-- Left Column: Description Card + Opening Hours + Orange CTA -->
-        <div class="md:col-span-4 flex flex-col gap-2.5 sm:gap-3 md:gap-5 order-2 md:order-1 md:-ml-4 lg:-ml-6">
+        <div class="md:col-span-4 flex flex-col gap-3.5 md:gap-5 order-2 md:order-1 md:-ml-4 lg:-ml-6">
           <!-- White Bubble Description Card -->
           <div
-            class="bg-white/95 backdrop-blur-md p-3.5 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100/90 max-w-md">
+            class="bg-white/95 backdrop-blur-md p-3.5 sm:p-5 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100/90 max-w-md">
             <p class="font-body-md text-xs sm:text-sm md:text-base text-[#0B1E3D] leading-relaxed font-medium">
               Spesialis gigi tiruan berpengalaman dengan teknologi cetak presisi tinggi untuk kenyamanan dan estetika
               alami senyum Anda.
@@ -290,28 +293,35 @@
           </a>
         </div>
 
-        <!-- Right Column: Stats (Compacted Strip on Mobile, Vertical Stack on Desktop) -->
+        <!-- Center Column: Focal Point Tooth Visual (Slightly Larger Scale) -->
+        <div class="md:col-span-4 flex items-center justify-center order-1 md:order-2 relative z-20">
+          <img src="img/hero_gigi.png" alt="Yaki Dental Hero Tooth Visual"
+            style="transform: scale(1.2) rotate(5deg) translateY(35px);"
+            class="hero-tooth-responsive w-[350px] md:w-[520px] lg:w-[610px] max-w-none md:-my-14 lg:-my-18 h-auto object-contain drop-shadow-[0_25px_45px_rgba(0,136,255,0.28)] hover:scale-[1.27] transition-transform duration-500 relative z-20 pointer-events-auto">
+        </div>
+
+        <!-- Right Column: Vertical Stats Stack (Matching Denta Care Reference) -->
         <div
           class="md:col-span-4 flex flex-row md:flex-col gap-2 sm:gap-6 md:gap-8 lg:gap-10 justify-around md:justify-center md:items-start order-3 md:pl-20 lg:pl-28 py-2.5 px-3 md:py-0 md:px-0 bg-white/75 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none rounded-2xl md:rounded-none border border-white/80 md:border-0 shadow-sm md:shadow-none mt-1 md:mt-0">
           <div class="text-center md:text-left flex-1 md:flex-initial">
             <span
               class="text-[1.35rem] sm:text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
               style="font-family: 'Inter', sans-serif;">500+</span>
-            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-tight"
+            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-snug"
               style="font-family: 'Inter', sans-serif;">Pasien Terlayani</p>
           </div>
           <div class="text-center md:text-left flex-1 md:flex-initial border-x border-slate-200/80 md:border-0 px-1.5 md:px-0">
             <span
               class="text-[1.35rem] sm:text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
               style="font-family: 'Inter', sans-serif;">5.0</span>
-            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-tight"
+            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-snug"
               style="font-family: 'Inter', sans-serif;">Rating Google Maps</p>
           </div>
           <div class="text-center md:text-left flex-1 md:flex-initial">
             <span
               class="text-[1.35rem] sm:text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] font-extrabold text-[#FF5722] leading-none block tracking-tight"
               style="font-family: 'Inter', sans-serif;">2–5</span>
-            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-tight"
+            <p class="text-[#0B1E3D] font-bold mt-1 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[15px] leading-snug"
               style="font-family: 'Inter', sans-serif;">Hari Pengerjaan</p>
           </div>
         </div>
@@ -321,7 +331,7 @@
     </div>
   </section>
 
-  <!-- Value Proposition Section (Strict Scroll Trigger) -->
+    <!-- Value Proposition Section (Strict Scroll Trigger) -->
   <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface-container-low relative sec-observer">
     <div class="max-w-container-max mx-auto">
       <div class="text-center mb-16">
