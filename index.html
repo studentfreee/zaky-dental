@@ -119,12 +119,15 @@
       animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
     }
 
-    /* Mobile-only override: keep tooth compact on mobile (< 768px) */
+    /* Mobile-only override: dynamic 3D floating tooth with expansive splash */
     @media (max-width: 767px) {
       .hero-tooth-responsive {
-        transform: rotate(4deg) translateY(4px) !important;
-        width: 215px !important;
-        max-width: 65vw !important;
+        transform: rotate(6deg) scale(1.05) translateY(-2px) !important;
+        width: 275px !important;
+        max-width: 78vw !important;
+        margin-top: -6px !important;
+        margin-bottom: -10px !important;
+        filter: drop-shadow(0 18px 32px rgba(0, 119, 255, 0.35)) !important;
       }
     }
 
@@ -257,9 +260,9 @@
       <!-- Headline Overlay -->
       <div class="relative z-10 w-full text-center mt-0 mb-1 md:mb-0">
         <h1
-          class="text-[clamp(1.95rem,7.8vw,3.2rem)] md:text-[clamp(2.8rem,9.2vw,9.5rem)] font-normal leading-[0.98] md:leading-[0.9] uppercase select-none text-center whitespace-normal md:whitespace-nowrap w-full relative top-[4px] md:top-[18px] px-1 md:px-0"
-          style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.07em;">
-          <span class="text-[#6BBFFF] inline-block">SETIAP SENYUM </span><span class="text-[#0077FF] inline-block">BERARTI</span>
+          class="text-[2.5rem] sm:text-[3rem] md:text-[clamp(2.8rem,9.2vw,9.5rem)] font-normal leading-[0.88] md:leading-[0.9] uppercase select-none text-center whitespace-normal md:whitespace-nowrap w-full relative top-[2px] md:top-[18px] px-1 md:px-0"
+          style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.06em;">
+          <span class="text-[#6BBFFF] block md:inline-block md:mr-3">SETIAP SENYUM</span><span class="text-[#0077FF] block md:inline-block">BERARTI</span>
         </h1>
       </div>
 
