@@ -1,4 +1,4 @@
-/* Zaky Dental - Main Application Logic */
+/* Yaki Dental - Main Application Logic */
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();

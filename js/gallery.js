@@ -1,4 +1,4 @@
-/* Zaky Dental - Before-After Gallery & Split Slider Logic */
+/* Yaki Dental - Before-After Gallery & Split Slider Logic */
 
 document.addEventListener('DOMContentLoaded', () => {
   initBeforeAfterSliders();
