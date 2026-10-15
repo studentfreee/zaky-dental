@@ -1,1 +1,11 @@
+# System & Editor files
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary / Scratch
 scratch/
+.temp/
+
+# Node / dependencies if any
+node_modules/
